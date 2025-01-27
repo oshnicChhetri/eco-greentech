@@ -1,0 +1,2210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+.signupLinkContainer {
+  margin-top: 1rem; /* Space above the link */
+  text-align: center; /* Center-align the text */
+}
+.signupLink {
+  color: #2b5ecc; /* Green color to match theme */
+  /* Remove underline */
+  /* Bold text */
+}
+
+.spinnerIcon {
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-page {
+  font-family: "Arial", sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.contact-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-page p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-form {
+  margin: 2rem 0;
+}
+
+.contact-textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.contact-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.send-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.aboutusContainer {
+  width: 100%;
+  
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.aboutus{
+
+  color:black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 2.4rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+.message {
+  color: white;
+}
+body {
+  position: relative;
+  background-color: rgba(18, 87, 64, 0.912);
+  overflow-x: hidden;
+  
+  margin: 0;
+  padding: 0;
+   /* Prevent horizontal scrolling */
+
+}
+.footer {
+  background-color: white; /* Light background */
+  padding: 2rem 1rem; /* Add more padding for better spacing */
+  text-align: center; /* Center-align the text */
+  color: #333;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+
+  width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.footer h1 {
+  font-size: 2rem; /* Responsive font size */
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.footer p {
+  font-size: 1rem; /* Standard size for readability */
+  line-height: 1.8; /* Comfortable spacing for text */
+  max-width: 80%; /* Use percentage for responsive width */
+  margin: 0 auto;
+  color: black;
+}
+
+.option {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.mainNav {
+  width: 100%;
+  min-width: 450px;
+  background-color: rgba(243, 161, 18, 0.856);
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.mainLogo {
+  height: 100%;
+}
+.mainLogoLink {
+  display: inline-block;
+  height: 90%;
+}
+
+.iconContainer {
+  width: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartIconContainer {
+  background-color: none;
+}
+.cartIcon {
+  font-size: 4.5rem;
+}
+
+.userIcon {
+  font-size: 4rem;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  width: 40%; /* You can adjust this based on your design */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.searchButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.searchIcon {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.formContainer {
+  /* background-color: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(10px);  */
+
+  background-color: rgba(
+    31,
+    41,
+    55,
+    0.85
+  ); /* Retain the original color with slight transparency */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for definition */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Deep shadow for depth */
+  backdrop-filter: blur(10px); /* Glass-like blur effect */
+  min-width: 420px;
+  width: 60%;
+  height: auto;
+  padding: 20px;
+
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  /* position: absolute;
+  top: 70%;
+  left: 20%; */
+}
+form {
+  padding-left: 20px;
+}
+label {
+  display: block;
+  color: white;
+  margin-top: 2.5rem;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+.formInput {
+  display: block;
+  width: 90%;
+
+  height: 2.5rem;
+  color: white;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  /* padding-left: 2.5rem ;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem; */
+
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity, 1));
+  border-radius: 0.375rem;
+}
+
+input[type="file"] {
+  display: block;
+  width: 90%;
+  height: 2.5rem;
+  background-color: rgb(
+    55 65 81
+  ); /* Match the background color with the form inputs */
+  color: white;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.3rem;
+  border: 1px solid rgb(75 85 99); /* Border matching the rest of the form inputs */
+  border-radius: 0.375rem;
+  margin-top: 1rem; /* Space for better alignment */
+  cursor: pointer; /* Make it clear it's a clickable element */
+}
+
+textarea {
+  min-height: 100px; /* Ensuring the textarea has a good height */
+}
+
+.formH1 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.submitButton {
+  height: 2.5rem;
+  width: 90%;
+  margin-top: 2rem;
+  background-color: rgb(
+    55 65 81 / var(--tw-bg-opacity, 1)
+  ); /* Dark gray background */
+  border: 2px solid rgb(0 0 0 / var(--tw-border-opacity, 1)); /* Subtle border */
+  border-radius: 0.375rem; /* Rounded corners */
+  color: white; /* Text color */
+  font-size: 1rem; /* Adjust font size */
+  text-align: center; /* Center-align the text */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  margin-bottom: 1rem;
+}
+
+.userSidebar {
+  background-color: rgba(
+    31,
+    41,
+    55,
+    0.923
+  ); /* Retain the original color with slight transparency */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for definition */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Deep shadow for depth */
+  backdrop-filter: blur(10px); /* Glass-like blur effect */
+  min-width: 300px;
+  position: absolute;
+  right: 0px;
+  width: 10%;
+  height: 100%;
+z-index: 1;
+  padding: 20px;
+  display: block;
+}
+.userSidebarCollapsed {
+  background-color: rgba(31, 41, 55, 0.923);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  min-width: 300px;
+  position: absolute;
+  display: none;
+  width: 10%;
+  height: 100vh;
+  padding: 20px;
+  transition: right 0.5s ease-in-out;
+}
+
+.first2IconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.linkDiv {
+  width: 3rem;
+}
+
+.linkDiv:first-child {
+  font-size: 3rem;
+  color: rgba(95, 141, 215, 0.85);
+}
+
+.adminContainer {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+  background-color: rgba(95, 141, 215, 0.25); /* Subtle background */
+  padding: 10px 20px; /* Add padding around the content */
+  border-radius: 8px;
+  border: 2px solid rgba(95, 141, 215, 0.5); /* Rounded corners for the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add soft shadow for depth */
+  max-width: 250px; /* Max width of the container */
+  margin: 20px auto; /* Centered horizontally with auto margin */
+}
+
+.adminIcon {
+  font-size: 2.5rem; /* Icon size */
+  color: #ffba00; /* Bright accent color */
+  margin-left: 10px;
+  cursor: pointer; /* Space between text and icon */
+}
+
+.adminContainer span {
+  font-size: 1.2rem; /* Font size for the "Admin" text */
+  color: white; /* White text color for contrast */
+  font-weight: bold;
+  cursor: pointer; /* Bold text for emphasis */
+}
+
+.userSidebarUL {
+  list-style-type: none; /* Remove default list styling */
+  padding: 1rem 0 1rem 1rem; /* Add padding around the list */
+  margin-top: 3rem; /* Remove default margin */
+
+  color: white; /* White text color */
+  font-size: 1.1rem; /* Font size for the list items */
+  font-weight: 400; /* Regular font weight */
+}
+.userSidebarItem {
+  display: flex; /* Flexbox for better alignment */
+
+  padding: 12px 20px; /* Padding for button-like size */
+  color: white; /* Text color */
+  font-size: 1rem; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  text-decoration: none; /* Remove default underline */
+  border-radius: 8px; /* Rounded corners for the button look */
+  background-color: rgba(95, 141, 215, 0.25); /* Subtle background color */
+  margin-bottom: 1rem;
+  border: 2px solid rgba(95, 141, 215, 0.5); /* Border to make it more button-like */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  width: 100%; /* Make sure the button takes full width of the sidebar */
+  text-align: center; /* Center the text inside the item */
+}
+
+.logoutIcon {
+  font-size: 3rem;
+  color: rgba(95, 141, 215, 0.85);
+  position: absolute;
+  bottom: 2.5rem;
+}
+
+.mainAdminNav {
+  width: 100%; /* Full width of the screen */
+  min-width: 450px; /* Ensures the navigation doesn't shrink too much */
+  background-color: #2c3e50; /* Dark slate blue for a professional look */
+  border: 5px solid #46413e;
+  display: flex;
+  justify-content: space-around; /* Evenly space nav items */
+  align-items: center;
+  height: 15vh; /* Scales height dynamically based on viewport */
+  padding: 1rem; /* Padding for breathing space */
+  box-sizing: border-box; /* Includes padding and border in width/height */
+}
+
+.adminNavItems {
+  font-size: 1rem; /* Scales with rem (relative to root font size) */
+  font-weight: bold;
+  text-transform: uppercase; /* Makes text uppercase */
+  padding: 0.5rem 1rem; /* Dynamic spacing for responsiveness */
+  border: 2px solid #8f8b1f; /* Border for button-like structure */
+  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(
+    to bottom,
+    #0fe777,
+    #35cb10
+  ); /* Gradient for button */
+  color: #ffffff; /* White text for contrast */
+  text-decoration: none; /* No underline */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  flex-shrink: 0; /* Prevent buttons from shrinking too small */
+}
+
+.adminLogoutIcon {
+  font-size: 2.5rem; /* Dynamically scales with rem */
+  flex-shrink: 0; /* Ensures it doesn't shrink with the container */
+  color: white;
+}
+
+.adminProductsContainer {
+  width: 90%; /* Dynamically adjusts based on screen size */
+  margin: auto;
+  padding: 5rem 2rem; /* Reduced padding for smaller screens */
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Spacing between product items */
+  background-color: #1f2937; /* Dark background for the container */
+  border-radius: 0.5rem;
+  box-sizing: border-box; /* Includes padding and border in width/height */
+}
+
+.adminProductItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+  background-color: rgb(
+    55,
+    65,
+    81
+  ); /* Dark background color for product item */
+  border: 1px solid rgb(75, 85, 99); /* Border to match background */
+  border-radius: 0.375rem; /* Rounded corners */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 1rem; /* Space between wrapped items */
+  box-sizing: border-box;
+}
+
+.adminProductLink{
+  display: contents; /* Make the link fill the entire card */
+  text-decoration: none; /* Remove underline */
+  color: inherit;
+}
+.productImage {
+  max-width: 15%; /* Scales dynamically with the parent container */
+  max-height: 50px;
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 1rem; /* Space between image and text */
+  flex-shrink: 0; /* Prevents image from shrinking */
+  object-fit: contain; /* Ensures images fit within the container */
+}
+.adminProductName{
+  width: auto;
+  padding-left: 0.1rem;
+}
+.productItem {
+  background-color: rgb(75, 85, 99); /* Slightly lighter gray for box texture */
+  color: white; /* Text color */
+  font-size: 1rem;
+  font-weight: bold;
+  flex: 1; /* Allows the item to grow and shrink as needed */
+  padding: 0.5rem 1rem; /* Reduced padding for better responsiveness */
+  border-radius: 0.375rem; /* Rounded corners */
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 120px; /* Ensures items don't shrink too small */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+
+.price span,
+.stocks span,
+.category span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.price span {
+  color: red; /* Red for price to stand out */
+}
+
+.stocks span {
+  color: rgb(27, 216, 27); /* Green for available stock */
+}
+.stockInput {
+  width: 50%;
+  padding: 0.4rem; /* Compact padding */
+  border: 1px solid rgb(75, 85, 99); /* Border matches the product item */
+  border-radius: 0.375rem; /* Rounded corners */
+  background-color: rgb(31, 41, 55); /* Matches the dark theme */
+  color: white; /* White text for contrast */
+  font-size: 1rem;
+  text-align: center;
+  outline: none; /* Removes default focus outline */
+}
+
+.stockInput:focus {
+  border-color: rgb(27, 216, 27); /* Green border on focus */
+  box-shadow: 0 0 5px rgba(27, 216, 27, 0.5); /* Subtle green glow */
+}
+
+.updateStockButton {
+  padding: 0.4rem 0.8rem; /* Compact button size */
+  background-color: rgb(27, 216, 27); /* Green to match stock styling */
+  color: white; /* White text */
+  border: none; /* No border for cleaner look */
+  border-radius: 0.375rem; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 0.5rem; /* Space between input and button */
+}
+
+.updateStockButton:hover {
+  background-color: rgb(22, 180, 22); /* Slightly darker green on hover */
+}
+
+.updateStockButton:active {
+  background-color: rgb(19, 150, 19); /* Even darker green when active */
+}
+.adminCategory span {
+  color: rgb(192, 34, 34); /* Purple for category */
+}
+
+.adminProductLogosContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; /* Align logos to the right */
+  flex: 1; /* Takes up remaining space */
+}
+
+.deleteLogo,
+.arrowLogo {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevents icons from shrinking */
+}
+.deleteLogo{
+  color: red;
+}
+
+.categoriesContainer {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem; /* Consistent gap for compact layout */
+}
+
+.category {
+  width: calc(33.33% - 1.5rem); /* Default: Three categories per row */
+  height: auto; /* Let height adjust to content */
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners for card effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Ensure content stays within the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.category:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.categoryLink {
+  display: contents; /* Make the link fill the entire card */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited text color */
+}
+
+.categoryImageContainer {
+  width: 100%;
+  height: 80%; /* Adjusted height for a better ratio */
+  background-color: #f4f4f4;
+}
+
+.categoryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.categoryNameContainer {
+  width: 100%;
+  height: 20%; /* Adjusted for more space */
+  background-color: gray;
+  padding: 10px; /* Added inner padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryName {
+  font-size: 1.2rem; /* Larger and more readable font */
+  font-weight: bold;
+  text-align: center;
+  color: #000000; /* Neutral text color */
+}
+
+.categoryProductContainer {
+  width: 90%;
+  height: auto;
+  margin: 3rem auto;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem; /* Consistent spacing between cards */
+}
+
+.categoryProduct {
+  width: calc(33.33% - 1.5rem); /* Default: Three columns per row */
+  height: 25rem; /* Let height adjust to content */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+.categoryProduct:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.categoryProductImageContainer {
+  width: 100%;
+  height: 80%;
+  background-color: #f4f4f4;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+.categoryProductImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categoryProductDetailContainer {
+  height: 20%;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.categoryProductDetailContainerText {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+.categoryProdcutPrice {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cartButtonContainer {
+  background-color: #ffc107;
+  width: 40%;
+  height: 3rem;
+  font-size: 3rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartButtonContainer:hover {
+  background-color: #ffa000;
+}
+
+.fullProductContainer {
+  width: 80%; /* Use percentage for responsive width */
+  margin:  auto;
+  margin-top: 2rem;
+  padding: 2rem; /* Use rem for scalable spacing */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.fullProductImageContainer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%; /* Full width for responsiveness */
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.fullProductImageContainer img {
+  width: 100%; /* Scale image to container */
+  height: 100%; /* Stretch to fit */
+  object-fit: cover; /* Keep proportions */
+}
+
+.fullProductName {
+  font-size: 2rem; /* Scalable font size */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.fullProductDetailsContainer {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.fullProductPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:red;
+  margin: 1.5rem 0;
+}
+
+.fullProductCartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 90%;
+  height: 2.5rem;
+  background-color: orange;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.fullProductIcon {
+  font-size: 2rem; /* Scalable icon size */
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.fullProductIcon:hover {
+  transform: scale(1.2);
+  
+}
+
+
+.cartContainer {
+  width: 90%; /* Adjusted for better flexibility */
+  max-width: 1200px; /* Limit maximum width */
+  margin: 3rem auto;
+  
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  font-family: Arial, sans-serif;
+}
+
+.cartItemsContainer {
+  flex: 1 1 65%; /* Grow to fill space but prefer 65% width */
+  padding: 1rem;
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartOrderAndCouponContainer {
+  flex: 1 1 30%; /* Grow to fill space but prefer 30% width */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: transparent; /* Blend naturally */
+}
+
+/* Cart Items */
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #2c3e50;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cartItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cartItemImageContainer {
+  flex: 0 0 15%; /* Fixed ratio for image */
+  max-height: 80%;
+}
+
+.cartItem img {
+  width: 100%; /* Ensure image fits container */
+  border-radius: 4px;
+}
+
+.cartItemDetails {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.cartItemName,
+.cartItemPrice {
+  margin: 0;
+  color: white;
+}
+
+.cartItemQuantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cartItemQuantity h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.cartItemQuantityButton {
+  font-size: 1.25rem;
+  color: #0fe777;
+  cursor: pointer;
+}
+
+.cartItemQuantityButton:hover {
+  color: #00d65c; /* Slight hover effect */
+}
+
+.cartItemDelete {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
+
+.cartItemDelete:hover {
+  color: #ff4d4d; /* Slight hover effect */
+}
+
+/* Order Summary */
+/* Ensure the containers use flexbox with column direction */
+.orderSummary, .couponCode {
+  max-height: fit-content;
+  flex: 1;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Stack items vertically */
+  justify-content: space-between; /* Push the button to the bottom */
+  position: relative; /* Necessary for absolute positioning of button */
+}
+.totalAmount{
+
+color: red;
+font-size: 1.3rem;
+}
+.originalAmount{
+color: #28a745;
+font-size: 1.3rem;
+}
+
+/* Checkout button */
+.checkoutButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0fe777;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.checkoutButton:hover {
+  background-color: #28a745;
+}
+
+/* Coupon Code */
+.couponCode input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+  color: black;
+}
+
+/* Apply coupon button */
+.applyCoupon {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0fe777;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.applyCoupon:hover {
+  background-color: #00d65c;
+}
+
+.purchaseSucessContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3rem;
+  height: auto;
+  width: 50%;
+  padding: 5%; /* Ensure padding scales with screen size */
+  text-align: center;
+  background-color: #1f2937; /* Greenish background */
+  font-family: 'Arial', sans-serif;
+  color: white; /* White text for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight elevation */
+}
+
+.checkIcon {
+  font-size: calc(3rem + 2vw); /* Icon scales with viewport width */
+  color: #4caf50; /* Bright green for success */
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: calc(1.5rem + 1vw); /* Heading scales dynamically */
+  color: #f9f9f9; /* Slightly off-white text */
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: calc(1rem + 0.5vw); /* Slightly smaller scale */
+  color: #c8e6c9; /* Muted light green */
+  margin-bottom: 2rem;
+}
+
+.purchaseSucessOrderDetails {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white card background */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1.5rem;
+  width: 100%; /* Full width */
+  max-width: 500px; /* Limit max width for large screens */
+  margin-bottom: 1.5rem;
+  color: white; /* White text for readability */
+}
+
+.purchaseSucessOrderDetails section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.purchaseSucessOrderDetails p {
+  
+  
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: left; /* Align labels to the left */
+  
+}
+.purchaseSucessOrderDetails span{
+  color: #4caf50;
+  font-weight: bold;
+}
+
+
+.purchaseSucessThanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 1rem; /* Space between icon and text */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Constrain max width */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+}
+.purchaseLink{
+  display: contents;
+}
+.purchaseSucessThanks svg {
+  font-size: calc(1.5rem + 1vw); /* Icon scales dynamically */
+}
+
+.PurchaseSucessContinueShopping {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2e7d32; /* Dark green button */
+  color: white;
+  padding: 1rem; /* Padding adjusts proportionally */
+  border-radius: 10px;
+  text-align: center;
+  font-size: calc(0.9rem + 0.3vw); /* Scales button text size */
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.PurchaseSucessContinueShopping:hover {
+  background-color: #1b5e20; /* Darker green on hover */
+}
+
+.PurchaseSucessContinueShopping p {
+  margin: 0;
+}
+
+
+
+
+/* Container for all orders */
+.userOrdersContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #1f2937;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Each order item container */
+.userOrderItem {
+  background-color: #374151;
+  border: 1px solid #4b5563;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Product details container */
+.orderProductDetails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 products per row */
+  gap: 1rem; /* Space between products */
+  flex-wrap: wrap;
+}
+
+/* Individual product item */
+.productItem {
+  background-color: #4b5563; /* Background for visibility */
+  border-radius: 0.375rem;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;  /* Stack product details vertically */
+  gap: 0.5rem;  /* Optional: space between the details */
+}
+
+/* Product detail name, price, quantity */
+.productDetailName,
+.productDetailPrice,
+.productDetailQuantity {
+  margin: 0.2rem 0;
+  font-size: 14px;
+}
+
+/* Order status display */
+.orderStatus {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  gap: 1rem;
+}
+
+/* Update Status section */
+.update-status-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.update-status-dropdown {
+  padding: 8px;
+  background-color: #4b5563;
+  color: white;
+  border: 1px solid #6b7280;
+  border-radius: 0.375rem;
+}
+
+.update-status-btn {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.update-status-btn:hover {
+  background-color: #218838;
+}
+
+/* Total amount section */
+.totalAmount {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.amount {
+  color: red;
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+/* User email section */
+.userEmail {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.email {
+  color: rgb(24, 191, 217);
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+/* Address details */
+.userAddress {
+  color: white;
+  font-weight: bold;
+}
+
+.addressLabel {
+  margin-right: 5px;
+}
+
+.toggleAddressBtn {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.toggleAddressBtn:hover {
+  background-color: #1e40af;
+}
+
+.addressDetails {
+  display: none;
+  padding-top: 10px;
+}
+
+.addressDetails.show {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+}
+
+.addressDetails.show p {
+  font-size: 1rem;
+  color: black;
+}
+
+.addressDetails.show span {
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+  color: white;
+}
+
+.addressDetails p {
+  margin: 5px 0;
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Order ID */
+.userOrderId {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Loading message */
+
+
+
+/* Update Status section */
+.update-status-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.update-status-dropdown {
+  padding: 8px;
+  background-color: #4b5563;
+  color: white;
+  border: 1px solid #6b7280;
+  border-radius: 0.375rem;
+}
+
+.update-status-btn {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.update-status-btn:hover {
+  background-color: #218838;
+}
+
+/* Total amount section */
+.userOrderTotalAmount {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.userOrderTotalAmount-amount {
+  color: red;
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+/* User email section */
+.userOrderUserEmail {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.userOrderUserEmail-email {
+  color: rgb(24, 191, 217);
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+/* Address details */
+.userOrderUserAddress {
+  color: white;
+  font-weight: bold;
+}
+
+.userOrderAddressLabel {
+  margin-right: 5px;
+}
+
+.toggleAddressBtn {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.toggleAddressBtn:hover {
+  background-color: #1e40af;
+}
+
+.addressDetails {
+  display: none;
+  padding-top: 10px;
+}
+
+.addressDetails.show {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+}
+
+.addressDetails.show p {
+  font-size: 1rem;
+  color: black;
+}
+
+.addressDetails.show span {
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+  color: white;
+}
+
+.addressDetails p {
+  margin: 5px 0;
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Order ID */
+.userOrderId {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Loading message */
+
+
+
+.userDetailsContainer {
+  width: 100%; /* Flexible width */
+  max-width: 80%; /* Limit maximum size */
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #1f2937; /* Dark background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  box-sizing: border-box;
+  color: white; /* Text color */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.userDetails, .userAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #374151; /* Darker container background */
+  padding: 1rem;
+  border: 1px solid #4b5563; /* Subtle border */
+  border-radius: 0.5rem;
+  width: 100%; /* Prevent horizontal overflow */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.userDetailsFullName, .userDetailsEmail, .userAddressDetial {
+  display: flex;
+  justify-content: space-between; /* Align label and value */
+  padding: 0.5rem 1rem;
+  background-color: #4b5563; /* Contrast background */
+  border-radius: 0.375rem;
+  overflow-wrap: break-word; /* Prevent content overflow */
+}
+
+.userDetailsFullName h1, .userDetailsEmail h1, .userAddressDetial h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+  color: #d1d5db; /* Subtle gray for labels */
+}
+
+.userDetailsFullName span, .userDetailsEmail span, .userAddressDetial span {
+  font-size: 2rem;
+  color: #ffffff; /* Bright text for values */
+  font-weight: 500;
+}
+
+.userDetailsFullName span:empty,
+.userDetailsEmail span:empty,
+.userAddressDetial span:empty {
+  color: #9ca3af; /* Placeholder color */
+  font-style: italic;
+}
+
+/* Add hover effect for interaction */
+.userDetailsFullName, .userDetailsEmail, .userAddressDetial:hover {
+  background-color: #6b7280;
+}
+
+.editAddressBtn,
+.saveAddressBtn,
+.cancelEditBtn {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.editAddressBtn {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.editAddressBtn:hover {
+  background-color: #2563eb;
+}
+
+.saveAddressBtn {
+  background-color: #10b981;
+  color: white;
+}
+
+.saveAddressBtn:hover {
+  background-color: #059669;
+}
+
+.cancelEditBtn {
+  background-color: #ef4444;
+  color: white;
+  margin-left: 10px;
+}
+
+.cancelEditBtn:hover {
+  background-color: #dc2626;
+}
+
+.editAddressForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #374151;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.editAddressForm label {
+  font-size: 1.4rem;
+}
+
+.editAddressForm input {
+  font-size: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  color: #d1d5db;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input {
+  padding: 8px;
+  border: 1px solid #6b7280;
+  border-radius: 0.375rem;
+  background-color: #4b5563;
+  color: white;
+}
+
+
+.changePasswordContainer {
+  width: 100%; /* Flexible width */
+  max-width: 80%; /* Limit maximum size */
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #1f2937; /* Dark background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  box-sizing: border-box;
+  color: white; /* Text color */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.changePasswordsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #374151; /* Darker container background */
+  padding: 1rem;
+  border: 1px solid #4b5563; /* Subtle border */
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.changePasswordsContainer label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #d1d5db; /* Subtle gray for labels */
+  margin-bottom: 0.5rem;
+}
+
+.changePasswordsContainer input {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 0.375rem;
+  border: 1px solid #6b7280; /* Darker border */
+  background-color: #4b5563; /* Input background */
+  color: white;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.changePasswordsContainer input:focus {
+  border-color: #1d4ed8; /* Highlight border on focus */
+  background-color: #6b7280; /* Lighter background on focus */
+}
+
+.changePasswordsContainer button {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  background-color: #1d4ed8; /* Primary color */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.changePasswordsContainer button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}
+
+
+.emailContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f2937;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emailForm h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #d1d5db;
+}
+
+.emailTextarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  border: 1px solid #4b5563;
+  background-color: #374151;
+  color: white;
+  height: 150px;
+  resize: none;
+}
+
+.emailTextarea:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  background-color: #6b7280;
+}
+
+.emailSubmitButton {
+  padding: 12px 20px;
+  background-color: #1d4ed8;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emailSubmitButton:hover {
+  background-color: #2563eb;
+}
+
+.emailSubmitButton:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+.statusMessage {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.statusMessage.success {
+  color: #10b981;
+}
+
+.statusMessage.error {
+  color: #ef4444;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #4b5563;
+  margin: 1.5rem 0;
+}
+
+h2 {
+  text-align: center;
+  color: #d1d5db;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .mainNav {
+    width: 100%;
+    min-width: 450px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cartIcon {
+    margin: auto;
+  }
+  .cartIconContainer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    z-index: 10;
+  }
+  
+
+  .formContainer {
+    width: 90%; /* Make the form container smaller on mobile */
+    max-width: 20rem; /* Ensure the form container doesn't become too wide */
+    margin: auto; /* Remove margins to allow for centering */
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Optional: add shadow for depth */
+    backdrop-filter: blur(10px); /* Optional: frosted-glass effect */
+    margin-top: 4rem;
+    margin-bottom: 12rem;
+    position: static;
+  }
+
+  .userSidebar {
+    background-color: rgba(31, 41, 55, 0.923);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    min-width: 300px;
+    position: absolute;
+    right: 0px;
+    display: block;
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .userSidebarCollapsed {
+    background-color: rgba(31, 41, 55, 0.923);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    min-width: 300px;
+    position: absolute;
+    display: none;
+    width: 10%;
+    height: 100vh;
+    padding: 20px;
+    transition: right 1s ease-in-out;
+  }
+
+  .category {
+    width: calc(50% - 1rem); /* Two categories per row for tablets */
+  }
+
+  .categoryName {
+    font-size: 1rem; /* Adjusted font size */
+  }
+
+  .logoutIcon {
+    bottom: 4.5rem;
+  }
+
+  .categoryProduct {
+    width: calc(50% - 1rem); /* Two products per row */
+  }
+
+  .cartButtonContainer {
+    font-size: 2rem; /* Adjust button font size for smaller screens */
+  }
+
+  .categoryProductTexts {
+    font-size: 1rem; /* Adjust text size for better fit */
+  }
+
+  .categoryProdcutPrice {
+    font-size: 1rem; /* Adjust price text size */
+  }
+
+  .fullProductContainer {
+    padding: 1rem;
+  }
+
+  .fullProductName {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .fullProductDetailsContainer {
+    font-size: 0.9rem; /* Adjust font size for readability */
+  }
+
+  .fullProductPrice {
+    font-size: 1.2rem; /* Slightly smaller for mobile */
+  }
+
+  .fullProductIcon {
+    font-size: 1.5rem; /* Reduce icon size for mobile */
+  }
+
+  .footer {
+    padding: 2.5rem 2rem; /* Adjust padding for larger screens */
+  }
+
+  .footer h1 {
+    font-size: 2.5rem; /* Larger font size for headings */
+  }
+
+  .footer p {
+    font-size: 1.2rem; /* Larger font size for better readability */
+    max-width: 60%; /* Reduce paragraph width for better focus */
+  }
+
+
+   .cart-container {
+    flex-direction: column;
+  }
+
+  .cart-items,
+  .order-summary,
+  .coupon-code {
+    min-width: unset;
+    margin-bottom: 1rem;
+  }
+
+   .purchaseSucessContainer {
+    width: 90%; /* Reduce width for smaller screens */
+    padding: 3%; /* Adjust padding */
+    margin-top: 2rem;
+  }
+
+  .checkIcon {
+    font-size: calc(2rem + 3vw); /* Scale down the icon */
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: calc(1.2rem + 1vw); /* Smaller heading */
+  }
+
+  h2 {
+    font-size: calc(0.9rem + 0.5vw); /* Reduce font size */
+    margin-bottom: 1.5rem;
+  }
+
+  .purchaseSucessOrderDetails {
+    padding: 1rem; /* Reduce padding */
+    max-width: 100%; /* Allow full width on smaller screens */
+  }
+
+  .purchaseSucessOrderDetails section {
+    flex-direction: column; /* Stack labels and values */
+    align-items: flex-start; /* Align text to the left */
+  }
+
+  .purchaseSucessOrderDetails p,
+  .purchaseSucessOrderDetails span {
+    width: 100%; /* Full width for labels and values */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .purchaseSucessThanks {
+    padding: 0.8rem; /* Reduce padding */
+    max-width: 100%; /* Full width */
+    flex-direction: column; /* Stack icon and text */
+    text-align: center; /* Center-align text */
+  }
+
+  .purchaseSucessThanks svg {
+    font-size: calc(1rem + 2vw); /* Scale down the icon */
+  }
+
+  .PurchaseSucessContinueShopping {
+    padding: 0.8rem; /* Adjust padding */
+    font-size: calc(0.8rem + 0.3vw); /* Adjust font size */
+    flex-direction: column; /* Stack content if needed */
+  }
+  .orderProductDetails {
+    grid-template-columns: repeat(2, 1fr); /* 2 products per row */
+  }
+
+  .userDetailsContainer {
+    max-width: 95%; /* Allow container to take up more space on small devices */
+    padding: 1.5rem; /* Reduce padding for small devices */
+  }
+
+  .userDetailsFullName h1, .userDetailsEmail h1, .userAddressDetial h1 {
+    font-size: 1.4rem; /* Reduce font size */
+  }
+
+  .userDetailsFullName span, .userDetailsEmail span, .userAddressDetial span {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+
+  .editAddressBtn, .saveAddressBtn, .cancelEditBtn {
+    width: 100%; /* Make buttons full width for better tap targets */
+    padding: 12px 0;
+    font-size: 1.3rem; /* Slightly smaller button text */
+  }
+
+  .editAddressForm input {
+    font-size: 1.4rem; /* Smaller input fields */
+  }
+
+  .editAddressForm label {
+    font-size: 1.2rem; /* Smaller label text */
+  }
+
+   .changePasswordContainer {
+    max-width: 90%; /* Allow the container to be more flexible on smaller screens */
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .changePasswordsContainer label {
+    font-size: 1.2rem; /* Smaller font size for labels */
+  }
+
+  .changePasswordsContainer input {
+    font-size: 1.4rem; /* Smaller font size for input fields */
+    padding: 8px; /* Reduce padding in input fields */
+  }
+
+  .changePasswordsContainer button {
+    font-size: 1.4rem; /* Smaller font size for the button */
+    padding: 8px 12px; /* Reduce button padding */
+  }
+
+   .footer {
+    width: 80%; /* Adjust width for tablets and small screens */
+    padding: 1.5rem 1rem; /* Reduce padding */
+  }
+
+  .footer h1 {
+    font-size: 1.8rem; /* Smaller font for smaller screens */
+  }
+
+  .footer p {
+    font-size: 0.9rem; /* Reduce paragraph font size */
+    max-width: 90%; /* Increase width for better fit */
+  }
+
+
+  .contact-page {
+    padding: 1rem;
+  }
+
+  .contact-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-page p {
+    font-size: 0.95rem;
+  }
+
+  .send-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .searchBar {
+    display: flex;
+    align-items: center;
+    width: 45%; /* You can adjust this based on your design */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+  }
+  .categoriesContainer {
+    gap: 1rem; /* Reduce gap for smaller screens */
+  }
+
+  .category {
+    width: 100%; /* One category per row */
+  }
+
+  .categoryName {
+    font-size: 0.9rem; /* Further reduce font size for small screens */
+  }
+  .userSidebar {
+    background-color: rgba(31, 41, 55, 0.923);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    min-width: 300px;
+    position: absolute;
+    right: 0px;
+    display: block;
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+  }
+
+   .fullProductContainer {
+    padding: 0.5rem;
+  }
+
+  .fullProductName {
+    font-size: 1.2rem;
+  }
+
+  .fullProductDetailsContainer {
+    font-size: 0.8rem;
+    line-height: 1.4; /* Improve readability on smaller screens */
+  }
+
+  .fullProductPrice {
+    font-size: 1rem;
+  }
+
+  .fullProductIcon {
+    font-size: 1.2rem;
+  }
+
+  
+
+  .purchaseSucessContainer {
+    width: 95%; /* Reduce width further */
+    padding: 2%; /* Adjust padding */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Smaller heading for very small screens */
+  }
+
+  h2 {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .checkIcon {
+    font-size: 2.5rem; /* Reduce icon size */
+    margin-bottom: 1rem;
+  }
+
+  .PurchaseSucessContinueShopping {
+    padding: 0.6rem; /* Further adjust padding */
+    font-size: 0.9rem; /* Smaller text */
+  }
+
+   .orderProductDetails {
+    grid-template-columns: 1fr; /* Only 1 product per row */
+  }
+
+  .userDetailsContainer {
+    max-width: 95%; /* Take up more space */
+    padding: 1rem; /* Even smaller padding for mobile */
+  }
+
+  .userDetailsFullName h1, .userDetailsEmail h1, .userAddressDetial h1 {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+
+  .userDetailsFullName span, .userDetailsEmail span, .userAddressDetial span {
+    font-size: 1.3rem; /* Further reduce font size */
+  }
+
+  .editAddressBtn, .saveAddressBtn, .cancelEditBtn {
+    width: 100%; /* Ensure full-width buttons on small screens */
+    padding: 15px 0;
+    font-size: 1.4rem; /* Larger button text for small devices */
+  }
+
+  .editAddressForm input {
+    font-size: 1.4rem; /* Keep the font smaller on mobile */
+  }
+
+  .editAddressForm label {
+    font-size: 1.1rem; /* Adjust label text */
+  }
+
+    .changePasswordContainer {
+    max-width: 100%; /* Full width for very small screens */
+    padding: 1rem; /* Reduce padding further */
+  }
+
+  .changePasswordsContainer label {
+    font-size: 1.1rem; /* Smaller font size for labels */
+  }
+
+  .changePasswordsContainer input {
+    font-size: 1.3rem; /* Adjust input field font size */
+    padding: 6px; /* Smaller padding for input fields */
+  }
+
+  .changePasswordsContainer button {
+    font-size: 1.3rem; /* Adjust button font size */
+    padding: 6px 10px; /* Smaller padding for buttons */
+  }
+
+  .footer {
+    width: 100%; /* Full width for mobile screens */
+    padding: 1rem; /* Compact padding */
+  }
+
+  .footer h1 {
+    font-size: 1.5rem; /* Further reduce header size */
+  }
+
+  .footer p {
+    font-size: 0.85rem; /* Smaller font for readability on small screens */
+  }
+
+.contact-page {
+    padding: 0.8rem;
+    margin: 1rem;
+  }
+
+  .contact-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-page p {
+    font-size: 0.9rem;
+  }
+
+  .contact-textarea {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .send-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+}

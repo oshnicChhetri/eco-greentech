@@ -1,0 +1,30 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "E-commerce backend and frontend",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.21.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.4",
+    "nodemon": "^3.1.9",
+    "stripe": "^17.5.0",
+    "vercel.json": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/stripe": "^8.0.417"
+  }
+}
