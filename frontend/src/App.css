@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 
-* {
+/* * {
   box-sizing: border-box;
 
+} */
+.navLink{
+color: black;
+text-decoration: none;
 }
+
 
 .signupLinkContainer {
   margin-top: 1rem; /* Space above the link */
@@ -133,7 +138,7 @@
   margin: 20px;
   border-radius: 10px;
   font-size: 2.4rem;
-  font-weight: 100;
+  font-weight: 2rem;
   text-align: center;
 }
 
@@ -646,6 +651,7 @@ z-index: 1;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 2rem; /* Consistent gap for compact layout */
+  margin-bottom: 10rem;
 }
 
 .category {
@@ -1780,6 +1786,7 @@ a:hover {
     left: 0;
     background-color: orange;
     z-index: 10;
+    margin-top: 5rem;
   }
   
 
@@ -2208,3 +2215,158 @@ a:hover {
   }
 
 }
+
+@media only screen and (max-width: 360px) {
+  .searchBar {
+    width: 60%; /* Make it wider for smaller screens */
+    padding: 4px;
+  }
+
+  .categoriesContainer {
+    gap: 0.8rem; /* Reduce gap even further */
+  }
+
+  .categoryName {
+    font-size: 0.8rem; /* Smaller font for compact display */
+  }
+
+  .userSidebar {
+    min-width: 250px; /* Reduce minimum width */
+    padding: 15px;
+    position: absolute;
+    right: 0;
+  }
+
+  .fullProductName {
+    font-size: 1rem; /* Reduce product name size */
+  }
+
+  .fullProductDetailsContainer {
+    font-size: 0.75rem;
+  }
+
+  .fullProductPrice {
+    font-size: 0.9rem;
+  }
+
+  .purchaseSucessContainer {
+    width: 90%;
+    padding: 1.5%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  .checkIcon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .PurchaseSucessContinueShopping {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .orderProductDetails {
+    grid-template-columns: 1fr;
+  }
+
+  .userDetailsContainer {
+    max-width: 90%;
+    padding: 0.8rem;
+  }
+
+  .userDetailsFullName h1, 
+  .userDetailsEmail h1, 
+  .userAddressDetial h1 {
+    font-size: 1rem;
+  }
+
+  .userDetailsFullName span, 
+  .userDetailsEmail span, 
+  .userAddressDetial span {
+    font-size: 1.1rem;
+  }
+
+  .editAddressBtn, 
+  .saveAddressBtn, 
+  .cancelEditBtn {
+    font-size: 1.2rem;
+    padding: 12px 0;
+  }
+
+  .editAddressForm input {
+    font-size: 1.2rem;
+  }
+
+  .editAddressForm label {
+    font-size: 1rem;
+  }
+
+  .changePasswordContainer {
+    padding: 0.8rem;
+  }
+
+  .changePasswordsContainer label {
+    font-size: 1rem;
+  }
+
+  .changePasswordsContainer input {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .changePasswordsContainer button {
+    font-size: 1.2rem;
+    padding: 5px 8px;
+  }
+
+  .footer {
+    padding: 0.8rem;
+  }
+
+  .footer h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .contact-page {
+    padding: 0.6rem;
+    margin: 0.8rem;
+  }
+
+  .contact-page h1 {
+    font-size: 1.4rem;
+  }
+
+  .contact-page p {
+    font-size: 0.8rem;
+  }
+
+  .contact-textarea {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+
+  .send-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-info p {
+    font-size: 0.8rem;
+  }
+}
+

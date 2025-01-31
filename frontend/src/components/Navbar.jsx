@@ -23,7 +23,7 @@ const Navbar = ({ setIsCollapsed }) => {
 
       <SearchBar />
 
-      <Link to="/aboutus">
+      <Link to="/aboutus" className="navLink navLinkAboutUs">
         <div className='aboutusContainer'>
           <p className='aboutus'>About Us</p>
         </div>
@@ -31,7 +31,7 @@ const Navbar = ({ setIsCollapsed }) => {
 
 
       <div className='iconContainer' >
-        <Link to="/cart">
+        <Link to="/cart" className='navLink '>
         <div className='cartIconContainer'>
           <IoCartOutline className='cartIcon' />
         </div>
@@ -52,7 +52,7 @@ const Navbar = ({ setIsCollapsed }) => {
 
 
             ) : (
-              <Link to="/login">
+              <Link to="/login" className='navLink'>  
                 <IoLogInOutline className="userIcon" />
               </Link>
             )
