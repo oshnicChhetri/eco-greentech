@@ -7,6 +7,18 @@
   box-sizing: border-box;
 
 } */
+
+body {
+  position: relative;
+  background-color: rgba(18, 87, 64, 0.912);
+  overflow-x: hidden;
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
 .navLink{
 color: black;
 text-decoration: none;
@@ -145,16 +157,7 @@ text-decoration: none;
 .message {
   color: white;
 }
-body {
-  position: relative;
-  background-color: rgba(18, 87, 64, 0.912);
-  overflow-x: hidden;
-  
-  margin: 0;
-  padding: 0;
-   /* Prevent horizontal scrolling */
 
-}
 .footer {
   background-color: white; /* Light background */
   padding: 2rem 1rem; /* Add more padding for better spacing */
@@ -1829,6 +1832,11 @@ a:hover {
     height: 100vh;
     padding: 20px;
     transition: right 1s ease-in-out;
+  } 
+
+  .logoutIcon{
+    position: relative;
+    top: 0;
   }
 
   .category {
@@ -2060,14 +2068,15 @@ a:hover {
   .categoryName {
     font-size: 0.9rem; /* Further reduce font size for small screens */
   }
+
   .userSidebar {
     background-color: rgba(31, 41, 55, 0.923);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    min-width: 300px;
+  
     position: absolute;
-    right: 0px;
+    right: 0rem;
     display: block;
     width: 10%;
     height: 100%;
@@ -2215,6 +2224,15 @@ a:hover {
   }
 
 }
+
+ @media only screen and (max-width: 440px){
+  .userSidebar {
+    
+  
+    position: absolute;
+    right: 0px;
+  }
+} 
 
 @media only screen and (max-width: 360px) {
   .searchBar {
