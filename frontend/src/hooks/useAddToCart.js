@@ -8,6 +8,7 @@ const [loading, setLoading] = useState(false);
 
 const addToCart = async({productId})=>{
 
+    console.log(productId);
  setLoading(true);
     try {
 

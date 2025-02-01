@@ -22,8 +22,8 @@ const FullProductPage = () => {
             toast.error("Please login to add products to cart.");
             return;
         } else {
-            await addToCart(productId)
-            toast.success("Product added to cart.");
+            await addToCart({productId})
+          
         }
 
     };
